@@ -1,3 +1,6 @@
+/* ============================
+   Import Fonts & Reset Styles
+============================ */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -12,7 +15,9 @@ body {
   font-style: normal;
 }
 
-
+/* ============================
+   CSS Variables (Theme Colors)
+============================ */
 :root {
   --bg-color: #043873;
   --color: #fff;
@@ -20,8 +25,43 @@ body {
   --try-btn-color: #4f9cf9;
 }
 
-/* Navbar-Design  */
+/* ============================
+   Reusable Styles & Utilities
+============================ */
 
+/* Background Colors for Sections */
+.hero-section-1,
+.hero-section-3 {
+  background-color: var(--bg-color);
+}
+
+
+.hero-section-2,
+.hero-section-4 {
+  background-color: var(--color);
+}
+
+/* Text Styles */
+ .for-white-bg {
+  color: #212529;
+  line-height: 1.5;
+  font-weight: 250;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  margin-top: 25px;
+}
+
+ .for-blue-bg {
+  font-size: 1.2rem;
+  color: var(--color);
+  margin-bottom: 30px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+/* ============================
+   Navbar Styles
+============================ */
 .navbar {
   display: flex;
   align-items: center;
@@ -39,9 +79,6 @@ body {
 .logo {
   width: 220px;
   margin-right: 20px;
-}
-
-.logo {
   filter: brightness(0) invert(1);
 }
 
@@ -68,6 +105,7 @@ button {
   color: #fff;
 }
 
+/* Buttons */
 .login-btn,
 .try-btn {
   border-radius: 10px;
@@ -77,45 +115,70 @@ button {
 .login-btn {
   background-color: var(--lg-btn-color);
   padding: 20px 30px;
+  transition: background-color 0.3s ease;
 }
 
 .login-btn:hover {
   background-color: #ebcf7b;
-  transition: 0.3s ease;
 }
 
 .try-btn {
   background-color: var(--try-btn-color);
   padding: 20px 30px;
   color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 .try-btn:hover {
   background-color: #3f8ff1;
-  transition: 0.3s ease;
 }
 
-/* Hero-section L1 Design */
+/* ============================
+   Hero Section Styles
+============================ */
 
+/* General Hero Section */
 .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 80px;
-  background-color: var(--bg-color);
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
-  margin-bottom: 4rem;
+  
   
 }
+
 .hero-content {
   max-width: 600px;
   margin-left: 4rem;
   margin-top: 3.5rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  
 }
 
+.hero-content h1 {
+  font-size: 3.4rem;
+  color: var(--color);
+  margin-bottom: 25px;
+}
 
+.hero-content .try-btn {
+  margin-top: 3.5rem;
+  margin-left: -2px;
+  transition: transform 0.3s ease;
+}
+
+.hero-content .try-btn:hover {
+  background-color: #3f8ff1;
+  transform: scale(1.1);
+}
+
+/* Background Image */
 .bg-img {
   position: absolute;
   top: 0;
@@ -124,70 +187,42 @@ button {
   height: 100%;
   object-fit: contain;
   z-index: 0;
-  opacity: 0.6; 
+  opacity: 0.6;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 20px;
-}
-
-
-.hero-content h1 {
-  font-size: 3.4rem;
-  color: var(--color);
-  margin-bottom: 25px;
-}
-
-.hero-content .for-blue-bg {
-  font-size: 1.2rem;
-  color: var(--color);
-  margin-bottom: 30px;
-  line-height: 1.5;
-  letter-spacing: 1.2px;
-}
-
-.hero-content .try-btn {
-  margin-top: 3.5rem;
-  margin-left: -2px;
-}
-
-.hero-content .try-btn:hover {
-  background-color: #3f8ff1;
-  transform: scale(1.1);
-}
-
+/* Hero Image Container */
 .hero-image-container img {
   width: 100%;
   max-width: 600px;
   margin-right: 4rem;
 }
 
-
-
-/* Hero-section L2 Design */
-
-.hero-section-2 {
-  background-color: var(--color);
+/* ============================
+   Hero Section 2 Specific Styles
+============================ */
+.hero-section-2{
+  gap: 8rem;
+  margin-bottom: 3rem;
 }
+
+
 
 .hero-content-2 h1 {
   color: #212529;
-  margin-bottom: -10px; z-index: 1;
-  
+  margin-bottom: -10px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+ 
 }
 
-.hero-content .for-white-bg {
-  color: #212529;
-  line-height: 1.5;
-  font-weight: 250;
-  font-size: 18px;
-  letter-spacing: 1.2px;
-  margin-top: 25px;
-}
+.L2-bg-img{
+  position: absolute;
+  left: 0;
+  top: 15rem;
+  object-fit: cover;
 
+}
 
 .underline-wrapper {
   position: relative;
@@ -197,27 +232,23 @@ button {
 
 .underline-img {
   position: absolute;
-  bottom: 0.1rem;  
+  bottom: 0.1rem;
   left: 0;
   width: 150%;
   height: auto;
-  z-index: -1; 
+  z-index: -1;
   pointer-events: none;
 }
 
+/* ============================
+   Hero Section 4 Specific Styles
+============================ */
 
-/* Landing-section-3-design */
-
-.hero-section-3{
-  background-color: var(--color);
-  padding: 40px 135px;
-
-}
-
-.hero-content-3 h1 {
+.hero-content-4 h1 {
   color: #212529;
+  margin-bottom: -10px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
-
-
-
 
