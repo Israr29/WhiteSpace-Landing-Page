@@ -54,8 +54,10 @@ If you like this project, consider giving it a ⭐ on GitHub!
 
 📬 Contact
 Want to collaborate or hire me for converting Figma to HTML/CSS/JS?
-📧 Email: your-email@example.com
-🌐 Portfolio: [Coming Soon]
+📧 Email: im.israrahmed29@gmail.com
+[![Fiverr Badge](https://img.shields.io/badge/Fiverr-Click%20Here-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/s/WElwvwX))
+
+🌐 Portfolio: [https://personal-project-99684.web.app/]
 
 “Whitespace is the silent element of design that makes your content breathe.”
 
