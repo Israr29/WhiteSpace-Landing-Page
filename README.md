@@ -13,6 +13,7 @@ Welcome to **Whitespace**, a modern, responsive landing page built from a Figma 
 ---
 
 🎨 Features & Highlights
+
 ✅ Fully responsive layout
 
 ✅ Built with clean HTML5 & CSS3
@@ -28,10 +29,12 @@ Welcome to **Whitespace**, a modern, responsive landing page built from a Figma 
 ✅ Styled select dropdowns and buttons
 
 ✅ Layered hero sections with imagery
-
 ✅ Section-based layout for scalability
 
+
+---
 🛠 Technologies Used
+
 HTML5
 
 CSS3
