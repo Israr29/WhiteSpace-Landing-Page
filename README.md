@@ -8,7 +8,7 @@ Welcome to **Whitespace**, a modern, responsive landing page built from a Figma 
 
 ## 🚀 Live Demo
 
-👉 [View Live Project](#) *(Add your live URL here if hosted)*
+👉 [View Live Project](#) 
 
 ---
 
@@ -50,7 +50,8 @@ Figma (Design source)
 ---
 
 ✍️ Author
-Developed by Israr
+Developed by Israr 
+
 If you like this project, consider giving it a ⭐ on GitHub!
 
 📬 Contact
@@ -58,7 +59,9 @@ Want to collaborate or hire me for converting Figma to HTML/CSS/JS?
 
 📧 Email: im.israrahmed29@gmail.com
 
+
 [![Fiverr Badge](https://img.shields.io/badge/Fiverr-Click%20Here-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/s/WElwvwX)
+
 
 🌐 Portfolio: https://personal-project-99684.web.app/
 
@@ -68,16 +71,3 @@ Want to collaborate or hire me for converting Figma to HTML/CSS/JS?
 
 
 ---
-## 📁 Project Structure
-
-```bash
-Whitespace/
-├── index.html
-├── style.css
-├── assets/
-│   ├── Logo.png
-│   ├── top-logo.png
-│   ├── hero-section-bg.png
-│   ├── hero-section-img.png
-│   ├── landing2-section-img.png
-│   └── social-link-img.jpg
