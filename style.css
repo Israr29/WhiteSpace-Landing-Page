@@ -21,6 +21,7 @@ body {
 :root {
   --bg-color: #043873;
   --color: #fff;
+  --color-for-white-bg: #f0faff;
   --lg-btn-color: #ffe492;
   --try-btn-color: #4f9cf9;
 }
@@ -31,18 +32,18 @@ body {
 
 /* Background Colors for Sections */
 .hero-section-1,
-.hero-section-3 {
+.hero-section-3,.hero-section-9 {
   background-color: var(--bg-color);
 }
 
-
 .hero-section-2,
-.hero-section-4 {
-  background-color: var(--color);
+.hero-section-4,
+.hero-section-7 {
+  background-color: var(--color-for-white-bg);
 }
 
 /* Text Styles */
- .for-white-bg {
+.for-white-bg {
   color: #212529;
   line-height: 1.5;
   font-weight: 250;
@@ -51,7 +52,7 @@ body {
   margin-top: 25px;
 }
 
- .for-blue-bg {
+.for-blue-bg {
   font-size: 1.2rem;
   color: var(--color);
   margin-bottom: 30px;
@@ -140,14 +141,13 @@ button {
 /* General Hero Section */
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 60px 80px;
+
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
-  
-  
 }
 
 .hero-content {
@@ -158,7 +158,6 @@ button {
   z-index: 1;
   color: white;
   padding: 20px;
-  
 }
 
 .hero-content h1 {
@@ -200,12 +199,9 @@ button {
 /* ============================
    Hero Section 2 Specific Styles
 ============================ */
-.hero-section-2{
+.hero-section-2 {
   gap: 8rem;
-  margin-bottom: 3rem;
 }
-
-
 
 .hero-content-2 h1 {
   color: #212529;
@@ -213,15 +209,13 @@ button {
   z-index: 1;
   position: relative;
   overflow: hidden;
- 
 }
 
-.L2-bg-img{
+.L2-bg-img {
   position: absolute;
   left: 0;
   top: 15rem;
   object-fit: cover;
-
 }
 
 .underline-wrapper {
@@ -252,3 +246,232 @@ button {
   overflow: hidden;
 }
 
+/* Subscription-Plans-Section-Design */
+
+.plan-section {
+  margin-top: 8rem;
+}
+
+.plan-section h1 {
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.plan-section p {
+  color: #212529;
+  text-align: center;
+}
+
+.plan-content {
+  margin-top: 4rem;
+  padding: 30px 40px;
+  margin-bottom: 4rem;
+}
+
+.plan-container {
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.plan-card {
+  background-color: var(--color);
+  width: 450px;
+  border: 2px solid #ffe492;
+  border-radius: 12px;
+  padding: 60px 40px;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.plan-card h2 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.plan-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.plan-card .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 15px;
+}
+
+.feature i {
+  color: #3b5d41;
+  font-size: 1.3rem;
+}
+
+.feature {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.plan-card .get-started {
+  background-color: #fff;
+  padding: 20px 40px;
+  color: #000;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  border: 1px solid #ffe492;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-left: -5px;
+}
+
+.plan-card .get-started:hover {
+  background-color: #ffe492;
+  transform: scale(1.1);
+}
+
+.plan-card.featured {
+  transform: scale(1.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 3px solid var(--bg-color);
+  z-index: 2;
+  background-color: var(--bg-color);
+}
+
+.plan-card.featured .price,
+.plan-card.featured i {
+  color: #ffe492;
+}
+
+.plan-card.featured .title {
+  text-align: left;
+}
+
+.plan-card.featured h2,
+.plan-card.featured .title,
+.plan-card.featured .feature {
+  color: #fff; /* Match primary theme */
+}
+
+.plan-card.featured .try-btn {
+  background-color: var(--try-btn-color);
+  color: white;
+  padding: 20px 40px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 2rem;
+  margin-left: -5px;
+  transition: background-color 0.3s ease;
+}
+
+.plan-card.featured .try-btn:hover {
+  background-color: #3f8ff1;
+  transform: scale(1.1);
+}
+
+.plan-card:hover,
+.plan-card:active {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Landing-section-6 */
+
+.l6-contianer {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 550px;
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+}
+
+.l6-content h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.l6-content p {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.l6-content .try-btn {
+  margin-left: 50rem;
+}
+
+.l6-content .try-btn:hover {
+  background-color: #3f8ff1;
+  transform: scale(1.1);
+}
+
+.l6-bg-img {
+  position: absolute;
+  left: 2px;
+  bottom: -5rem;
+  object-fit: cover;
+}
+
+/* LANDING-SECTION-7 */
+
+.hero-section-7 h1 {
+  color: #212529;
+}
+
+/* LANDING-SECTION-8-DESIGN */
+
+.l8-container {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f0faff;
+}
+
+.l8-content h1 {
+  font-size: 3.4rem;
+
+  margin-bottom: 5rem;
+}
+
+.sponsor-container {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sponsors-logos {
+  display: flex;
+  gap: 12rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsors-logos img {
+  max-height: 70px;
+  object-fit: contain;
+}
+
+
+/* LANDING-SECTION-9-DESIGN */
+
+
+.hero-content-9 h1{
+  color: var(--color);
+  margin-bottom: 2rem;
+}

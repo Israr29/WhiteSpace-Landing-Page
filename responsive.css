@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+  .plan-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .plan-card.featured {
+    transform: scale(1); /* Don’t zoom on small screens */
+  }
+}
