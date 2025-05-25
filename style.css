@@ -3,12 +3,14 @@
 ============================ */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Reset margins, paddings and set box-sizing for predictable layouts */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base body font settings */
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -19,20 +21,21 @@ body {
    CSS Variables (Theme Colors)
 ============================ */
 :root {
-  --bg-color: #043873;
-  --color: #fff;
-  --color-for-white-bg: #f0faff;
-  --lg-btn-color: #ffe492;
-  --try-btn-color: #4f9cf9;
+  --bg-color: #043873;            
+  --color: #fff;                  
+  --color-for-white-bg: #f0faff; 
+  --lg-btn-color: #ffe492;       
+  --try-btn-color: #4f9cf9;       
 }
 
 /* ============================
    Reusable Styles & Utilities
 ============================ */
 
-/* Background Colors for Sections */
+/* Background colors applied to multiple hero sections for consistency */
 .hero-section-1,
-.hero-section-3,.hero-section-9 {
+.hero-section-3,
+.hero-section-9 {
   background-color: var(--bg-color);
 }
 
@@ -42,7 +45,9 @@ body {
   background-color: var(--color-for-white-bg);
 }
 
-/* Text Styles */
+/* Text styles for contrasting backgrounds */
+
+/* For sections with white/light backgrounds */
 .for-white-bg {
   color: #212529;
   line-height: 1.5;
@@ -52,6 +57,7 @@ body {
   margin-top: 25px;
 }
 
+/* For sections with dark blue backgrounds */
 .for-blue-bg {
   font-size: 1.2rem;
   color: var(--color);
@@ -63,6 +69,7 @@ body {
 /* ============================
    Navbar Styles
 ============================ */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -80,9 +87,10 @@ body {
 .logo {
   width: 220px;
   margin-right: 20px;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); /* Invert colors for logo on dark bg */
 }
 
+/* Style for select dropdown and buttons in navbar */
 select {
   background-color: var(--bg-color);
   border: none;
@@ -101,18 +109,20 @@ button {
   cursor: pointer;
 }
 
+/* Arrow icon next to dropdown */
 #arrow {
   margin-left: 10px;
   color: #fff;
 }
 
-/* Buttons */
+/* Common button styles */
 .login-btn,
 .try-btn {
   border-radius: 10px;
   border: none;
 }
 
+/* Login button specific styles */
 .login-btn {
   background-color: var(--lg-btn-color);
   padding: 20px 30px;
@@ -123,6 +133,7 @@ button {
   background-color: #ebcf7b;
 }
 
+/* Try button specific styles */
 .try-btn {
   background-color: var(--try-btn-color);
   padding: 20px 30px;
@@ -135,16 +146,14 @@ button {
 }
 
 /* ============================
-   Hero Section Styles
+   Hero Section General Styles
 ============================ */
 
-/* General Hero Section */
 .hero-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 60px 80px;
-
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
@@ -166,6 +175,7 @@ button {
   margin-bottom: 25px;
 }
 
+/* Try button inside hero content with hover scale effect */
 .hero-content .try-btn {
   margin-top: 3.5rem;
   margin-left: -2px;
@@ -177,7 +187,7 @@ button {
   transform: scale(1.1);
 }
 
-/* Background Image */
+/* Background image styling in hero sections */
 .bg-img {
   position: absolute;
   top: 0;
@@ -189,7 +199,7 @@ button {
   opacity: 0.6;
 }
 
-/* Hero Image Container */
+/* Hero image container settings */
 .hero-image-container img {
   width: 100%;
   max-width: 600px;
@@ -199,6 +209,7 @@ button {
 /* ============================
    Hero Section 2 Specific Styles
 ============================ */
+
 .hero-section-2 {
   gap: 8rem;
 }
@@ -211,19 +222,14 @@ button {
   overflow: hidden;
 }
 
-.L2-bg-img {
-  position: absolute;
-  left: 0;
-  top: 15rem;
-  object-fit: cover;
-}
-
+/* Underline effect wrapper for text */
 .underline-wrapper {
   position: relative;
   display: inline-block;
   z-index: 1;
 }
 
+/* Underline image positioning */
 .underline-img {
   position: absolute;
   bottom: 0.1rem;
@@ -232,6 +238,14 @@ button {
   height: auto;
   z-index: -1;
   pointer-events: none;
+}
+
+/* Positioning for background image in hero-section-2 */
+.L2-bg-img {
+  position: absolute;
+  left: 0;
+  top: 15rem;
+  object-fit: cover;
 }
 
 /* ============================
@@ -246,7 +260,9 @@ button {
   overflow: hidden;
 }
 
-/* Subscription-Plans-Section-Design */
+/* ============================
+   Subscription Plans Section
+============================ */
 
 .plan-section {
   margin-top: 8rem;
@@ -268,6 +284,7 @@ button {
   margin-bottom: 4rem;
 }
 
+/* Container for all plan cards, flex with gap */
 .plan-container {
   padding: 40px 60px;
   display: flex;
@@ -276,6 +293,7 @@ button {
   justify-content: space-evenly;
 }
 
+/* Individual plan card styles */
 .plan-card {
   background-color: var(--color);
   width: 450px;
@@ -304,11 +322,14 @@ button {
   margin-bottom: 28px;
 }
 
+/* Feature item inside plan card */
 .feature {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
   gap: 15px;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .feature i {
@@ -316,11 +337,7 @@ button {
   font-size: 1.3rem;
 }
 
-.feature {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
+/* Call to action button in plan card */
 .plan-card .get-started {
   background-color: #fff;
   padding: 20px 40px;
@@ -338,6 +355,7 @@ button {
   transform: scale(1.1);
 }
 
+/* Highlighted (featured) plan card */
 .plan-card.featured {
   transform: scale(1.2);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
@@ -358,9 +376,10 @@ button {
 .plan-card.featured h2,
 .plan-card.featured .title,
 .plan-card.featured .feature {
-  color: #fff; /* Match primary theme */
+  color: #fff; /* Text matches the dark background */
 }
 
+/* Featured plan card's Try button */
 .plan-card.featured .try-btn {
   background-color: var(--try-btn-color);
   color: white;
@@ -378,13 +397,16 @@ button {
   transform: scale(1.1);
 }
 
+/* Hover and active state for all plan cards */
 .plan-card:hover,
 .plan-card:active {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Landing-section-6 */
+/* ============================
+   Landing Section 6 Styles
+============================ */
 
 .l6-contianer {
   background-color: var(--bg-color);
@@ -428,13 +450,17 @@ button {
   object-fit: cover;
 }
 
-/* LANDING-SECTION-7 */
+/* ============================
+   Landing Section 7 Styles
+============================ */
 
 .hero-section-7 h1 {
   color: #212529;
 }
 
-/* LANDING-SECTION-8-DESIGN */
+/* ============================
+   Landing Section 8 (Sponsors) Styles
+============================ */
 
 .l8-container {
   padding: 60px 20px;
@@ -444,7 +470,6 @@ button {
 
 .l8-content h1 {
   font-size: 3.4rem;
-
   margin-bottom: 5rem;
 }
 
@@ -467,11 +492,156 @@ button {
   object-fit: contain;
 }
 
+/* ============================
+   Landing Section 9 Styles
+============================ */
 
-/* LANDING-SECTION-9-DESIGN */
-
-
-.hero-content-9 h1{
+.hero-content-9 h1 {
   color: var(--color);
   margin-bottom: 2rem;
+}
+
+/* ============================
+   Review Section Styles (Section 10)
+============================ */
+
+.review-section-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 600px;
+  padding: 40px 20px;
+  margin-top: 6rem;
+}
+
+.review-section h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+/* Container for review cards with hidden overflow */
+.cards-container {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+/* Flex container for review cards with horizontal scrolling */
+.review-cards {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease;
+}
+
+/* Individual review cards styling */
+.cards {
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Blue variant of review card */
+.cards.blue {
+  background-color: #4f9cf9;
+}
+
+/* White variant of review card */
+.cards.white {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.cards.white i {
+  color: var(--bg-color);
+}
+
+/* Icon in review cards positioned top-left */
+.cards i {
+  font-size: 4rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  margin-left: 15px;
+}
+
+/* ===== Dots Navigation for carousel ===== */
+.coursel-dots {
+  margin-top: 30px;
+}
+
+.coursel-dots span {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: #4f9cf9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Active dot */
+.coursel-dots span.active {
+  background-color: #333;
+}
+
+/* Review card paragraph styling */
+.review-cards p {
+  margin-top: 6rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: left;
+  color: #212529;
+  margin-bottom: 3rem;
+}
+
+/* Text color variant for blue background review cards */
+.review-cards .blue-color {
+  color: #fff;
+}
+
+/* ============================
+   Client Info Section Styles
+============================ */
+
+.clients-info {
+  margin-top: 1.5rem;
+  padding: 20px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clients-info img {
+  margin-right: 1rem;
+}
+
+.info {
+  padding: 15px 0;
+}
+
+/* Client info text styles */
+.clients-info .info p {
+  margin-top: -4px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.clients-info .info h3 {
+  margin-bottom: 1.4rem;
+}
+
+/* Blue background heading */
+.info .blue-bg-heading {
+  color: #043873;
 }
