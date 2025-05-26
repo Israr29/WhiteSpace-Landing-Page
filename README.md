@@ -66,7 +66,7 @@ Want to collaborate or hire me for converting Figma to HTML/CSS/JS?
 🌐 Portfolio: https://personal-project-99684.web.app/
 
 
-“Whitespace is the silent element of design that makes your content breathe.”
+
 
 
 
