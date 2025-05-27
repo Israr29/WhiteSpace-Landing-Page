@@ -512,6 +512,7 @@ button {
   height: 600px;
   padding: 40px 20px;
   margin-top: 6rem;
+  margin-bottom: 15rem;
 }
 
 .review-section h1 {
@@ -519,12 +520,15 @@ button {
   font-weight: 700;
   margin-bottom: 4rem;
   position: relative;
+
 }
 
 /* Container for review cards with hidden overflow */
 .cards-container {
   overflow: hidden;
   padding: 20px 10px;
+   overflow-x: auto;
+ 
 }
 
 /* Flex container for review cards with horizontal scrolling */
@@ -545,6 +549,7 @@ button {
   height: 450px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   position: relative;
+  
 }
 
 /* Blue variant of review card */
@@ -573,11 +578,11 @@ button {
 }
 
 /* ===== Dots Navigation for carousel ===== */
-.coursel-dots {
+.carousel-dots {
   margin-top: 30px;
 }
 
-.coursel-dots span {
+.carousel-dots span {
   display: inline-block;
   height: 10px;
   width: 10px;
@@ -585,11 +590,12 @@ button {
   background-color: #4f9cf9;
   border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s ease;
+  
+  
 }
 
 /* Active dot */
-.coursel-dots span.active {
+.carousel-dots span.active {
   background-color: #333;
 }
 
@@ -644,4 +650,222 @@ button {
 /* Blue background heading */
 .info .blue-bg-heading {
   color: #043873;
+}
+
+
+/* ============================
+    LANDING-SECTION 11 STYLES
+============================ */
+.free-trail-section{
+  height: 600px;
+  background-color: var(--bg-color);
+  margin-top: 10rem;
+  text-align: center;
+  padding: 20px ;
+ 
+  
+}
+
+.free-trail-content{
+  padding: 40px ;
+}
+
+.free-trail-content h1{
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 1.3rem;
+}
+
+
+.free-trail-content p{
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.modifier{
+  margin-top: 2rem;
+}
+
+.app-icons-container{
+  display: flex;
+  justify-content: center;
+}
+
+.app-icons-logos {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-icons-img {
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.free-trail-content .try-btn:hover {
+  background-color: #3f8ff1;
+  transform: scale(1.1);
+}
+
+/* Footer-section-design */
+
+.footer-container {
+  background-color: var(--bg-color);
+  padding: 40px 130px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+.logo-contanier p {
+  text-align: left;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+.overview-list {
+  display: flex;
+  gap: 12rem;
+  text-align: left;
+}
+
+.overview-list h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.overview-list ul {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.overview-list ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  
+}
+
+.overview-list ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+}
+
+.overview-list ul li a:hover {
+  color: #fad872;
+}
+
+.start-today {
+  max-width: 220px;
+  margin-left: 5rem;
+}
+
+.start-today h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.start-today p {
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.start-today .try-btn{
+  margin-left: -10px;
+
+}
+
+.start-today .try-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* btm-content */
+
+.btm-content {
+  display: flex; 
+  align-items: center;
+  flex-wrap: wrap; 
+  padding: 10px 20px;
+  justify-content: space-between; 
+}
+
+.btm-content .footer-links a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+
+body .line-break{
+  opacity: .2;
+}
+
+
+.footer-links a:hover{
+  color: #ebcf7b;
+}
+
+
+.footer-lang select{
+  color: #ccc;
+  padding-left: 0;
+  padding: 0;
+  margin-left: 0;
+}
+
+
+
+/* footer-end-logos-design */
+
+
+
+
+.footer-end-logos {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px; 
+  padding: 10px; 
+  align-items: center;
+  
+}
+
+.footer-left-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
+
+.footer-end-logos  a img{
+  max-height: 30px;
+  object-fit: cover;
+  margin-right: 15px;
+
+}
+
+
+
+.footer-end-logos a img {
+  transition: transform 0.2s;
+}
+
+.footer-end-logos a img:hover {
+  transform: scale(1.1);
 }
