@@ -1,6 +1,6 @@
 # 🌟 Whitespace – Figma to Web Conversion
 
-![Whitespace Hero](./assets/whitspace.png)
+![Whitespace Hero](./assets/whitespace-full-look.png)
 
 Welcome to **Whitespace**, a modern, responsive landing page built from a Figma design using **HTML5** and **CSS3**. This sleek UI showcases clean layout design, user-focused components, and elegant styling suitable for SaaS platforms or project management tools.
 
