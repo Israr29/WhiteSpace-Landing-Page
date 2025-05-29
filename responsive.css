@@ -1,15 +1,130 @@
-@media screen and (max-width: 768px) {
-  .plan-container {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 1440px) {
+  nav {
+    padding: 2rem 9%;
+  }
+  section {
+    padding: 2rem 9%;
   }
 
-  .plan-card {
-    width: 90%;
-    margin-bottom: 2rem;
+  .hero-section .hero-content {
+    text-align: left;
+    margin-left: -45px;
+    padding: 20px 0%;
   }
 
-  .plan-card.featured {
-    transform: scale(1); /* Don’t zoom on small screens */
+  .hero-section .hero-image-container img {
+    width: 60vw;
+    margin: 0 8%;
   }
+
+  .hero-section-2 .L2-bg-img {
+    top: 0;
+    left: 0;
+  }
+
+  .hero-section-4 .hero-image-container img,
+  .hero-section-9 .hero-image-container img {
+    width: 40vw;
+    margin-right: 10rem;
+    margin-left: -3rem;
+  }
+
+  .plan-section {
+    padding: 2% 0;
+  }
+
+  .plan-section .plan-container {
+    gap: 4rem;
+    padding: 5% 2%;
+  }
+
+  .plan-section .plan-card {
+    width: 100%;
+  }
+
+  .l6-contianer .l6-bg-img{
+    width: 40%;
+    top: -10rem;
+    left: -18rem;
+    bottom: -20px;
+  }
+
+  .footer-container .footer-content {
+    padding: 2% 2% 0 0;
+    gap: 0.6rem;
+    text-align: left;
+  }
+
+  .footer-container .footer-content .overview-list {
+    gap: 5rem;
+  }
+
+  .l8-container .sponsor-container {
+   padding:  2rem 5%;
+  }
+
+  .l8-container .sponsor-container .sponsor-logos{
+    max-height: 10px;
+    
+  }
+
+  .review-section-container  img ,.info{
+    margin-top: -2rem;
+  
+  }
+
+  .review-section-container  .info{
+    margin-left: -10px;
+    text-align: left;
+  }
+
+  .review-section-container .clients-info  img{
+    margin-bottom:3rem;
+  }
+   
+  .review-section-container  .info p{
+    font-size: 15px;
+   
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  
+  
 }
+
+
+@media (max-width: 1220px){
+   #menu-icon {
+     display: block;
+   }
+
+   .navbar  .logo{
+     position: fixed;
+     top: 0;
+     left: 0;
+     padding: 30px ;
+     width: 25%;
+    
+   }
+
+  
+
+   .nav-links{
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     display: none;
+     flex-direction: column;
+     text-align: center;
+     background-color: #003366;
+     padding: 10px 0;
+   }
+
+   .nav-links.active {
+     display: flex;
+   }
+ }
+
+
+

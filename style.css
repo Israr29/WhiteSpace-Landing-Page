@@ -17,6 +17,8 @@ body {
   font-style: normal;
 }
 
+
+
 /* ============================
    CSS Variables (Theme Colors)
 ============================ */
@@ -76,6 +78,11 @@ body {
   justify-content: space-around;
   background-color: var(--bg-color);
   padding: 15px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo-container {
@@ -102,11 +109,16 @@ button {
   margin-left: 25px;
   padding: 25px 10px;
   font-size: 1rem;
+  cursor: pointer;
+
+  /* margin-left: 25px;
+  padding: 25px 10px;
+  font-size: 1rem;
   line-height: 1.2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 /* Arrow icon next to dropdown */
@@ -145,6 +157,14 @@ button {
   background-color: #3f8ff1;
 }
 
+#menu-icon{
+  font-size: 3.5rem;
+  color: #fff;
+  display: none; 
+}
+
+
+
 /* ============================
    Hero Section General Styles
 ============================ */
@@ -154,7 +174,7 @@ button {
   justify-content: space-evenly;
   align-items: center;
   padding: 60px 80px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
   overflow: hidden;
 }
@@ -168,6 +188,8 @@ button {
   color: white;
   padding: 20px;
 }
+
+
 
 .hero-content h1 {
   font-size: 3.4rem;
@@ -212,6 +234,7 @@ button {
 
 .hero-section-2 {
   gap: 8rem;
+  flex-wrap: nowrap;
 }
 
 .hero-content-2 h1 {
@@ -286,20 +309,21 @@ button {
 
 /* Container for all plan cards, flex with gap */
 .plan-container {
-  padding: 40px 60px;
+  padding: 40px 30px;
   display: flex;
   align-items: center;
-  gap: 3rem;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 2rem;
+  
 }
 
 /* Individual plan card styles */
 .plan-card {
   background-color: var(--color);
-  width: 450px;
+  width: 400px;
   border: 2px solid #ffe492;
   border-radius: 12px;
-  padding: 60px 40px;
+  padding: 30px 30px;
   margin-top: 2rem;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -418,6 +442,7 @@ button {
   justify-content: center;
   position: relative;
   overflow: visible;
+  text-align: center;
 }
 
 .l6-content h1 {
@@ -434,9 +459,7 @@ button {
   margin-right: 6rem;
 }
 
-.l6-content .try-btn {
-  margin-left: 50rem;
-}
+
 
 .l6-content .try-btn:hover {
   background-color: #3f8ff1;
@@ -477,12 +500,15 @@ button {
   margin-top: 6rem;
   display: flex;
   justify-content: center;
+  width: 100%;
+  
+
 }
 
 .sponsors-logos {
   display: flex;
-  gap: 12rem;
-  flex-wrap: wrap;
+
+  gap: 7rem;
   align-items: center;
   justify-content: center;
 }
@@ -628,6 +654,7 @@ button {
 
 .clients-info img {
   margin-right: 1rem;
+  margin-bottom: 3rem;
 }
 
 .info {
@@ -689,13 +716,15 @@ button {
 .app-icons-container{
   display: flex;
   justify-content: center;
+  
 }
 
 .app-icons-logos {
   display: flex;
   gap: 5rem;
   align-items: center;
-  justify-content: center;
+  
+  justify-content: space-around;
 }
 
 .app-icons-img {
@@ -712,13 +741,13 @@ button {
 
 .footer-container {
   background-color: var(--bg-color);
-  padding: 40px 130px;
+  padding: 40px 30px;
   color: #fff;
 }
 
 .footer-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 5rem;
@@ -869,3 +898,8 @@ body .line-break{
 .footer-end-logos a img:hover {
   transform: scale(1.1);
 }
+
+
+
+
+
