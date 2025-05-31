@@ -15,6 +15,10 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
+
+  width: 100%;
+  overflow-x: hidden; 
+
 }
 
 
@@ -72,99 +76,84 @@ body {
    Navbar Styles
 ============================ */
 
+
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: var(--bg-color);
-  padding: 15px 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
+  padding: 30px 30px;
   width: 100%;
   z-index: 1000;
+  position: relative;
 }
 
+/* Logo */
 .logo-container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-
 .logo {
   width: 220px;
-  margin-right: 20px;
-  filter: brightness(0) invert(1); /* Invert colors for logo on dark bg */
+  filter: brightness(0) invert(1);
 }
 
-/* Style for select dropdown and buttons in navbar */
-select {
+/* Nav Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+select, button {
   background-color: var(--bg-color);
   border: none;
   color: var(--color);
-}
-
-select,
-button {
-  margin-left: 25px;
   padding: 25px 10px;
   font-size: 1rem;
   cursor: pointer;
+}
 
-  /* margin-left: 25px;
-  padding: 25px 10px;
-  font-size: 1rem;
-  line-height: 1.2;
+/* Buttons Group */
+.nav-btns {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer; */
+  gap: 1.5rem;
 }
 
-/* Arrow icon next to dropdown */
-#arrow {
-  margin-left: 10px;
-  color: #fff;
-}
-
-/* Common button styles */
-.login-btn,
-.try-btn {
+/* Buttons */
+.login-btn, .try-btn {
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
-
-/* Login button specific styles */
 .login-btn {
   background-color: var(--lg-btn-color);
   padding: 20px 30px;
+  color: #000;
   transition: background-color 0.3s ease;
 }
-
 .login-btn:hover {
   background-color: #ebcf7b;
 }
-
-/* Try button specific styles */
 .try-btn {
   background-color: var(--try-btn-color);
   padding: 20px 30px;
   color: #fff;
   transition: background-color 0.3s ease;
 }
-
 .try-btn:hover {
   background-color: #3f8ff1;
 }
 
-#menu-icon{
-  font-size: 3.5rem;
-  color: #fff;
-  display: none; 
+/* Menu Icon */
+.menu-icon {
+  font-size: 2rem;
+  color: white;
+  display: none;
+  cursor: pointer;
 }
-
-
-
 /* ============================
    Hero Section General Styles
 ============================ */

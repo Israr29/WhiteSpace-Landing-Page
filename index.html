@@ -18,15 +18,15 @@
   </head>
   <body>
     <!-- Navbar-Code -->
-    <nav class="navbar">
+    <header class="navbar" >
       <div class="logo-contanier">
         <img src="./assets/Logo.png" alt="logo" class="logo" />
       </div>
       
 
-      <div class="nav-links">
+      <div class="nav-links" id="menuList"  >
         <select name="" id="">
-          <option value="Products">Products</option>
+          <option value="Products" class="option">Products</option>
         </select>
         <select name="" id="">
           <option value="Solutions">Solutions</option>
@@ -37,14 +37,18 @@
         <select name="" id="">
           <option value="Pricing">Pricing</option>
         </select>
-        <button class="login-btn">Login</button>
-        <button class="try-btn">
-          Try Whitepace free<span style="margin-left: 8px">→</span>
-        </button>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        
+        <div class="nav-btns" >
+          <button class="login-btn">Login</button>
+          <button class="try-btn">
+            Try Whitepace free<span style="margin-left: 8px">→</span>
+          </button>
+        </div>
       </div>
-    </nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </header>
    <!-- Landing Section 1: Hero Banner -->
     <section class="hero-section hero-section-1">
       <img src="./assets/hero-section-bg.png" class="bg-img" />
