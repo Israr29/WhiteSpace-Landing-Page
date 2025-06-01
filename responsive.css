@@ -2,8 +2,8 @@
   header {
     padding: 2rem 9%;
   }
-   
-  .navbar{
+
+  .navbar {
     gap: 0;
   }
 
@@ -95,7 +95,7 @@
 }
 
 @media (max-width: 1220px) {
-  html{
+  html {
     font-size: 70%;
   }
 
@@ -127,7 +127,7 @@
     padding: 20px;
     border: none;
   }
-  .dropdown .dropbtn{
+  .dropdown .dropbtn {
     background-color: transparent;
   }
 
@@ -147,44 +147,38 @@
     padding: 10px;
     display: block;
     font-weight: 600;
-   background-color:#043873 ;
+    background-color: #043873;
     color: white;
     text-decoration: none;
   }
 
-  .dropdown-content a:hover{
+  .dropdown-content a:hover {
     background-color: transparent;
     color: black;
-
   }
 
-  .navbar .nav-btns{
+  .navbar .nav-btns {
     margin-left: 10rem;
   }
-
 
   .navbar .menu-icon {
     display: block;
     cursor: pointer;
     color: white;
-    
   }
 
-  #menuList{
-    transition: all 0.50s;
+  #menuList {
+    transition: all 0.5s;
     width: 40%;
-    
-    
   }
 
- .hero-section .hero-image-container img {
+  .hero-section .hero-image-container img {
     width: 45vw;
-    
   }
 
-   .hero-section-2 .hero-content-2 p{
+  .hero-section-2 .hero-content-2 p {
     font-size: 1.3rem;
-   }
+  }
 
   .hero-section-4 .hero-image-container img,
   .hero-section-9 .hero-image-container img,
@@ -193,33 +187,29 @@
     width: 40vw;
   }
 
-   .change .fix{
+  .change .fix {
     margin-left: 4rem;
-    
-    
   }
 
-  .change .hero-image-container img{
+  .change .hero-image-container img {
     margin-left: -20px;
   }
 
-  .review-section-container .review-cards{
+  .review-section-container .review-cards {
     text-align: center;
-    
-    
   }
 
-  .review-section-container .review-cards p{
+  .review-section-container .review-cards p {
     font-size: 1.5rem;
   }
 
-  .review-section-container .clients-info{
+  .review-section-container .clients-info {
     margin: 0;
     padding: 0 2%;
     margin-top: 2rem;
   }
-  
-  .review-section-container .clients-info img{
+
+  .review-section-container .clients-info img {
     max-height: 7rem;
   }
 
@@ -229,83 +219,70 @@
     font-size: 1.8rem;
   }
 
-  .sponsor-container .sponsors-logos{
+  .sponsor-container .sponsors-logos {
     margin: 0;
     padding: 0 4%;
     gap: 5.5rem;
   }
 
-  .sponsor-container .sponsors-logos img{
+  .sponsor-container .sponsors-logos img {
     max-height: 4rem;
   }
-
 
   .footer-container .footer-content .overview-list {
     gap: 2rem;
     margin-left: 20px;
-    
-
   }
 
-  .footer-content .start-today{
+  .footer-content .start-today {
     margin-left: 30px;
-    
   }
 
-  .footer-content .logo-contanier p{
+  .footer-content .logo-contanier p {
     font-size: 1.4rem;
     text-align: left;
   }
 
-  .hero-section-2 .L2-bg-img{
+  .hero-section-2 .L2-bg-img {
     width: 30%;
     top: 9rem;
     left: -20rem;
   }
 
-  .btm-content{
+  .btm-content {
     font-size: 1.5rem;
   }
-  
-
- 
- 
 }
 
-@media (max-width:820px){
-  
-  
-  section{
+@media (max-width: 820px) {
+  section {
     padding: 2% 2%;
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-section .hero-content{
+  .hero-section .hero-content {
     text-align: center;
     max-width: 620px;
     line-height: 1.5;
     letter-spacing: 2px;
-    border: 2px solid black;
     margin-bottom: 1rem;
-    
   }
 
-  .hero-section .hero-content h1{
+  .hero-section .hero-content h1 {
     font-size: 3.6rem;
   }
 
-  .hero-section .hero-content p{
+  .hero-section .hero-content p {
     font-size: 1.2rem;
-  
   }
 
-  .hero-section .hero-image-container img{
+  .hero-section .hero-image-container img {
     width: 25vh;
     margin-right: 8rem;
   }
 
-  .hero-section-1 .bg-img{
+  .hero-section-1 .bg-img {
     position: absolute;
     opacity: 10;
     transform: scale(12);
@@ -313,28 +290,157 @@
     bottom: -4rem;
     width: 20%;
     height: 800px;
-    
   }
 
-  .hero-section-2 .L2-bg-img{
+  .hero-section-2 .L2-bg-img {
     position: absolute;
     left: 0;
     top: 0;
     opacity: 10;
   }
 
-  .hero-section-2 .hero-image-container img{
+  .hero-section-2 .hero-image-container img {
     margin-top: -8rem;
+  }
+  .change{
+    flex-direction: column-reverse;
+  }
+  .change .edited {
+    margin: 8rem 0 0 8rem;
+  }
+
+  .change .fix{
+    margin-top: -2rem;
+    margin-right: 4rem;
+  }
+
+  .hero-section-3 .hero-image-container img{
+    border-radius: 40px;
+    margin-top: 2rem;
+  }
+
+  .hero-section-4 .hero-image-container img{
+    margin-left: 4rem;
+    border-radius: 40px;
+  }
+
+  .plan-container{
+    
+    
+  }
+  .plan-container .plan-card{
+    padding: 30px 20px;
+    text-align: left;
+    width: fit-content;
+    font-size: 10px;
+    padding: 20px;
+    
+  }
+
+  .l6-content {
+    max-width: 600px;
+    text-align: left;
+    margin-left: -10rem;
+  }
+
+  .l6-contianer .l6-content h1{
+    text-align: left;
+  }
+  .l6-contianer .l6-content p{
+    text-align: left;
+    margin-left: -0.1rem;
+  }
+
+  .hero-section-7{
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .l8-container{
+    flex-direction: column;
+
+  }
+
+  .sponsor-container{
+    max-width: 100%;
+    text-align: center;
+
+  }
+
+  .sponsors-logos{
+    flex-direction: column;
+    justify-content: center ;
+    gap: 1rem;
   }
 
 
-  
+  .hero-section-9 .hero-image-container {
+    margin-left: 5rem;
+  }
+
+  .hero-section-9 .bg-img {
+    position: absolute;
+    opacity: 10;
+    transform: scale(12);
+    left: 0;
+    bottom: -4rem;
+    width: 20%;
+    height: 800px;
+  }
+
+
+  .free-trail-section .free-trail-content{
+   
+    max-width: 520px;
+    text-align: left;
+    margin-left: -20px;
+    margin-top: 1rem;
+  }
+
+  .app-icons-container .app-icons-logos{
+    text-align: left;
+    margin-left: -17rem;
+  }
+
+  .footer-container .footer-content{
+    flex-direction: column;
+    margin-top: -12rem;
+
+  }
+  .logo-contanier{
+    margin-left:4rem;
+    margin-bottom: 5rem;
+    transform: scale(1.3);
+  }
+
+  .footer-content .overview-list{
+    flex-direction: column;
+    margin-bottom: 4rem;
     
   
- 
+  }
 
+  .footer-content .overview-list ul{
+    margin-bottom: 4rem;
+  }
+
+
+  .overview-list ul li a, h4{
+    margin-left: -2rem;
+    
+  }
+
+  .footer-content .start-today{
+    margin-left: .6rem;  
+  }
+
+  .btm-content .footer-left-group{
+    font-size: 15px;
+  }
+
+  .btm-content .footer-end-logos{
+    margin-top: 1.5rem;
+  }
 
 }
-
-
 
