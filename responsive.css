@@ -95,27 +95,71 @@
 }
 
 @media (max-width: 1220px) {
-  header .nav-links{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    height: 50vh;
-    background-color:#043873 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    transition: all .30s;
-    gap: 0;
-    overflow: hidden;
-    
+  html{
+    font-size: 70%;
   }
 
-  .nav-links select{
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #0c4c9b;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    max-height: 100vh;
     padding: 20px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .dropbtn {
+    background-color: #0c4c9b;
+    color: black;
+    font-size: 1.5rem;
     text-align: left;
-    margin-bottom: 1.2rem;
-    margin-right: 2rem;
-    
+    width: 100%;
+    padding: 20px;
+    border: none;
+  }
+  .dropdown .dropbtn{
+    background-color: transparent;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: static;
+    color: black;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .dropdown-content.show {
+    display: block;
+  }
+
+  .dropdown-content a {
+    padding: 10px;
+    display: block;
+    font-weight: 600;
+   background-color:#043873 ;
+    color: white;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover{
+    background-color: transparent;
+    color: black;
+
+  }
+
+  .navbar .nav-btns{
+    margin-left: 10rem;
   }
 
 
@@ -123,9 +167,174 @@
     display: block;
     cursor: pointer;
     color: white;
+    
   }
 
   #menuList{
-    transition: all 0.50ss;
+    transition: all 0.50s;
+    width: 40%;
+    
+    
   }
+
+ .hero-section .hero-image-container img {
+    width: 45vw;
+    
+  }
+
+   .hero-section-2 .hero-content-2 p{
+    font-size: 1.3rem;
+   }
+
+  .hero-section-4 .hero-image-container img,
+  .hero-section-9 .hero-image-container img,
+  .hero-section-2 .hero-image-container img,
+  .hero-section-3 .hero-image-container img {
+    width: 40vw;
+  }
+
+   .change .fix{
+    margin-left: 4rem;
+    
+    
+  }
+
+  .change .hero-image-container img{
+    margin-left: -20px;
+  }
+
+  .review-section-container .review-cards{
+    text-align: center;
+    
+    
+  }
+
+  .review-section-container .review-cards p{
+    font-size: 1.5rem;
+  }
+
+  .review-section-container .clients-info{
+    margin: 0;
+    padding: 0 2%;
+    margin-top: 2rem;
+  }
+  
+  .review-section-container .clients-info img{
+    max-height: 7rem;
+  }
+
+  .review-section-container .clients-info .info h3 {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.8rem;
+  }
+
+  .sponsor-container .sponsors-logos{
+    margin: 0;
+    padding: 0 4%;
+    gap: 5.5rem;
+  }
+
+  .sponsor-container .sponsors-logos img{
+    max-height: 4rem;
+  }
+
+
+  .footer-container .footer-content .overview-list {
+    gap: 2rem;
+    margin-left: 20px;
+    
+
+  }
+
+  .footer-content .start-today{
+    margin-left: 30px;
+    
+  }
+
+  .footer-content .logo-contanier p{
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .hero-section-2 .L2-bg-img{
+    width: 30%;
+    top: 9rem;
+    left: -20rem;
+  }
+
+  .btm-content{
+    font-size: 1.5rem;
+  }
+  
+
+ 
+ 
 }
+
+@media (max-width:820px){
+  
+  
+  section{
+    padding: 2% 2%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section .hero-content{
+    text-align: center;
+    max-width: 620px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    
+  }
+
+  .hero-section .hero-content h1{
+    font-size: 3.6rem;
+  }
+
+  .hero-section .hero-content p{
+    font-size: 1.2rem;
+  
+  }
+
+  .hero-section .hero-image-container img{
+    width: 25vh;
+    margin-right: 8rem;
+  }
+
+  .hero-section-1 .bg-img{
+    position: absolute;
+    opacity: 10;
+    transform: scale(12);
+    left: 0;
+    bottom: -4rem;
+    width: 20%;
+    height: 800px;
+    
+  }
+
+  .hero-section-2 .L2-bg-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 10;
+  }
+
+  .hero-section-2 .hero-image-container img{
+    margin-top: -8rem;
+  }
+
+
+  
+    
+  
+ 
+
+
+}
+
+
+
