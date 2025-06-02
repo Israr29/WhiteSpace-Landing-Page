@@ -5,6 +5,11 @@
 Welcome to **Whitespace**, a modern, responsive landing page built from a Figma design using **HTML5** and **CSS3**. This sleek UI showcases clean layout design, user-focused components, and elegant styling suitable for SaaS platforms or project management tools.
 
 ---
+<h2>Figma to HTML</h2>
+
+![figma to html](./assets/figma-to-html.png)
+
+---
 
 ## 🚀 Live Demo
 
