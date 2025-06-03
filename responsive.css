@@ -510,6 +510,26 @@
     font-size: 55%;
   }
 
+   #menuList {
+
+    transition: all 0.5s;
+    width: 65%;
+    height: 600px;
+  }
+
+
+  
+  .hero-section  p{
+    font-size: 1.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .plan-content,.l6-content{
+    font-size: 1.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
   .hero-section .hero-content {
     text-align: center;
     max-width: 420px;
@@ -592,6 +612,11 @@
 
   }
 
+  .free-trail-section p{
+    font-size: 1.9rem;
+    margin-top: 15px;
+  }
+
   .free-trail-section .free-trail-content{
    
     max-width: 320px;
@@ -622,11 +647,9 @@
     padding: 2% 0;
 
   }
-  .logo-contanier{
-    margin-left:4rem;
-    margin-bottom: 5rem;
-    transform: scale(1.3);
-    text-align: center;
+  .footer-content .logo-contanier{
+    padding: 0 3%;
+    margin-right: 3rem;
     
   }
 
@@ -663,23 +686,27 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    text-align: center;   }
+    text-align: center;  
+   }
 
 
   .footer-left-group {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 2rem;
+    
    
     
   }
 
 
-   .footer-left-group #footer-language{
+   .footer-left-group #footer-language {
     font-size: 2.3rem;
     margin-top: 1rem;
+    margin-left: 20px;
     
    }
 
@@ -700,6 +727,23 @@
 
   .footer-links a{
     margin-top: 30px;
+
+  }
+
+  .footer-end-logos a img{
+    height: 2.4rem;
+   
+    
+  }
+
+  .l6-content .underline-wrapper img{
+    position: absolute;
+    left: 0;
+    
+    
+    width: 96%;
+    
+    
   }
 
   
