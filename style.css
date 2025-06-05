@@ -331,6 +331,12 @@ body {
   margin-top: 8rem;
 }
 
+.plan-scroll-wrapper {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
 .plan-section h1 {
   font-size: 3.4rem;
   text-align: center;
@@ -349,11 +355,12 @@ body {
 
 /* Container for all plan cards, flex with gap */
 .plan-container {
-  padding: 40px 30px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: stretch;
   gap: 2rem;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
   
 }
 
@@ -367,6 +374,10 @@ body {
   margin-top: 2rem;
   transition: all 0.3s ease;
   cursor: pointer;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .plan-card h2 {

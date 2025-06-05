@@ -390,6 +390,9 @@
     border-radius: 40px;
   }
 
+  .plan-container {
+    justify-content: flex-start;
+  }
   
   .plan-container .plan-card{
     padding: 30px 20px;
@@ -507,12 +510,7 @@
     margin-top: 1.5rem;
   }
 
-  .cards-container .review-cards{
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 20px; 
-  }
-
+ 
 
   
 
@@ -611,6 +609,21 @@
     text-align: left;
     margin-left: -0rem;
     padding: 0 3%;
+  }
+
+  .plan-container {
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .plan-card {
+    min-width: 90%;
+    max-width: 90%;
+    transform: none !important; 
+  }
+
+  .plan-card.featured {
+    transform: none;
   }
 
  
