@@ -22,4 +22,29 @@ function toggleMenu() {
     });
   });
 
+
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const dots = document.querySelectorAll(".carousel-dots .dot");
+    const reviewCards = document.getElementById("reviewCards");
+    const card = reviewCards.querySelector(".cards");
+    const cardWidth = card.offsetWidth + 48; // 48px = gap: 3rem
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        reviewCards.scrollTo({
+          left: index * cardWidth,
+          behavior: "smooth"
+        });
+
+        dots.forEach(d => d.classList.remove("active"));
+        dot.classList.add("active");
+      });
+    });
+  });
+
+
+
   

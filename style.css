@@ -161,7 +161,7 @@ body {
 }
 
 
-.nav-btns {
+.nav-btns  {
   display: inline-flex;
   align-items: center;
   gap: 1.5rem;
@@ -570,6 +570,37 @@ body {
 /* ============================
    Review Section Styles (Section 10)
 ============================ */
+.cards-container {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.review-cards {
+  display: flex;
+  gap: 3rem;
+  scroll-behavior: smooth;
+}
+
+.cards {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 450px;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+.cards-container {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+
+
+
 
 .review-section-container {
   width: 100%;
@@ -597,15 +628,21 @@ body {
  
 }
 
-/* Flex container for review cards with horizontal scrolling */
+
 .review-cards {
   display: flex;
   gap: 3rem;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; 
   transition: transform 0.3s ease;
+  scroll-behavior: smooth;
+  overflow-x: auto; 
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
 }
-
+.review-cards::-webkit-scrollbar {
+  display: none; 
+}
 /* Individual review cards styling */
 .cards {
   color: #fff;

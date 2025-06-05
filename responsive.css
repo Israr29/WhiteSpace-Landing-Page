@@ -100,6 +100,12 @@
   }
    
 
+  .navbar .inline{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
   
 
   .nav-links {
@@ -170,9 +176,7 @@
 
  
 
-  .navbar .nav-btns {
-    margin-top: 3rem;
-  }
+  
 
   .navbar .menu-icon {
     display: block;
@@ -502,6 +506,15 @@
     margin-top: 1.5rem;
   }
 
+  .cards-container .review-cards{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 20px; 
+  }
+
+
+  
+
 }
 
 
@@ -746,6 +759,16 @@
     
   }
 
+  .review-section .cards {
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 200px;
+  height: 350px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  position: relative;
+  
+}
   
 }
   
