@@ -439,7 +439,8 @@
 
 
   .hero-section-9 .hero-image-container {
-    margin-left: 5rem;
+   
+    width: 28vh;
   }
 
   .hero-section-9 .bg-img {
@@ -635,14 +636,15 @@
     max-width: 320px;
     gap: 1rem;
     text-align: left;
-    margin-left: -30px;
+    margin-left: -20px;
     padding: 0 10%;
     margin-top: 1rem;
   }
 
   .app-icons-container .app-icons-logos{
     text-align: left;
-    margin-left: -5rem;
+    margin-left: -4rem;
+    margin-top: 1.5rem;
     
   }
 
@@ -654,7 +656,6 @@
   .footer-container .footer-content{
     flex-direction: column;
     max-width: 380px;
- 
     font-size: 1.5rem;
     align-items: center;
     padding: 2% 0;
@@ -709,10 +710,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    
-   
-    
+    font-size: 2rem; 
   }
 
 
@@ -759,18 +757,11 @@
     
   }
 
-  .review-section .cards {
-  color: #fff;
-  border-radius: 16px;
-  padding: 30px 20px;
-  width: 200px;
-  height: 350px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  position: relative;
+ 
   
 }
-  
-}
+
+
   
  
 

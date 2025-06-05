@@ -26,25 +26,31 @@ function toggleMenu() {
 
 
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const dots = document.querySelectorAll(".carousel-dots .dot");
-    const reviewCards = document.getElementById("reviewCards");
-    const card = reviewCards.querySelector(".cards");
-    const cardWidth = card.offsetWidth + 48; // 48px = gap: 3rem
+const multipleItemCarousel = document.querySelector("#testimonialCarousel");
 
-    dots.forEach((dot, index) => {
-      dot.addEventListener("click", () => {
-        reviewCards.scrollTo({
-          left: index * cardWidth,
-          behavior: "smooth"
-        });
-
-        dots.forEach(d => d.classList.remove("active"));
-        dot.classList.add("active");
-      });
-    });
+if (window.matchMedia("(min-width:576px)").matches) {
+  const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+    interval: false,
   });
 
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
 
+  var scrollPosition = 0;
 
-  
+  $(".carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 3) {
+      console.log("next");
+      scrollPosition = scrollPosition + cardWidth;
+      $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
+    }
+  });
+  $(".carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition = scrollPosition - cardWidth;
+      $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
+    }
+  });
+} else {
+  $(multipleItemCarousel).addClass("slide");
+}
