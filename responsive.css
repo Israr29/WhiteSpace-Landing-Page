@@ -3,10 +3,7 @@
     padding: 2rem 9%;
   }
 
-  .navbar {
-    gap: 0;
-  }
-
+  
   section {
     padding: 2rem 9%;
   }
@@ -504,7 +501,6 @@
     text-align: left;
     max-width: 530px;
     padding: 40px;
-  
     margin-left: -14rem;
   }
 
