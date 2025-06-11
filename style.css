@@ -623,6 +623,7 @@ html{
 .review-section-container {
   width: 100%;
   margin: auto;
+  height: 10px;
   text-align: center;
   padding: 40px 20px;
   margin-top: 6rem;
@@ -643,7 +644,7 @@ html{
     LANDING-SECTION 11 STYLES
 ============================ */
 .free-trail-section{
-  height: 600px;
+  height: 500px;
   background-color: var(--bg-color);
   margin-top: 10rem;
   text-align: center;
