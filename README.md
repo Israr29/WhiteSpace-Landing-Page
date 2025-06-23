@@ -13,7 +13,7 @@ Welcome to **Whitespace**, a modern, responsive landing page built from a Figma 
 
 ## 🚀 Live Demo
 
-👉 [View Live Project](#) 
+👉 [View Live Project](https://whitepace-saas-web.netlify.app/) 
 
 ---
 
